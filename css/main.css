@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.top_wrapper{
+  height: 80vh;
+  background-image: linear-gradient(to right, rgba(0, 176, 240, 0.8), rgba(254, 194, 0, 0.8)), url(../resources/top_background.png);
+  position: relative;
+}
+.peon_name_contact{
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+.peon_name_contact h1{
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 75px;
+  font-size: 80px;
+}
+.peon_desc{
+  width: 55%;
+}
+.peon_desc p{
+  color: white;
+  text-align: left;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.peon_desc button{
+  width: 50%;
+  height: 50px;
+  background-color: rgb(0, 176, 240);
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all .5s ease-out;
+  margin-top: 20px;
+}
+.peon_desc button:hover{
+  background-color: white;
+  color: rgb(0, 176, 240);
+  border: 2px solid rgb(0, 176, 240);
+}
+.contact_logo{
+  float: left;
+  width: 50%;
+  color: white;
+  margin-top: 50px;
+  text-align: right;
+}
+.contact_logo i{
+  padding-right: 30px;
+  font-size: 30px;
+}
+.contact_phone_no{
+  float: right;
+  width: 50%;
+  color: white;
+  margin-top: 40px;
+}
+.contact_phone_no p{
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+.peon_book_library_menu{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: rotateY(-50%);
+
+  height: 100px;
+  width: 30%;
+  float: left;
+  background-color: rgb(254, 194, 0);
+  border-left: 5px solid white;
+  -webkit-clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
+  clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
+  transition: all .5s ease-out;
+}
+.peon_book_library_menu_text_holder{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.peon_book_library_menu p{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  padding-left: 30px;
+  font-size: 40px;
+  text-decoration: none;
+}
+.lib{
+  text-decoration: none;
+}
+.peon_book_library_menu:hover{
+  width: 35%;
+}
