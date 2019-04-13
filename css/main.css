@@ -30,7 +30,7 @@
   font-size: 20px;
   margin-top: 20px;
 }
-.peon_desc button{
+.peon_desc a{
   width: 50%;
   height: 50px;
   background-color: rgb(0, 176, 240);
@@ -40,8 +40,10 @@
   cursor: pointer;
   transition: all .5s ease-out;
   margin-top: 20px;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
 }
-.peon_desc button:hover{
+.peon_desc a:hover{
   background-color: white;
   color: rgb(0, 176, 240);
   border: 2px solid rgb(0, 176, 240);
@@ -101,4 +103,153 @@
 }
 .peon_book_library_menu:hover{
   width: 35%;
+}
+.book_slider_container{
+  position: relative;
+  height: 600px;
+}
+.featered_book_slider{
+  margin-top: 50px;
+  height: 500px;
+  width: 665px;
+  float: left;
+  margin-left: 100px;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+.slider_book_image img{
+  display: none;
+  height: 500px;
+  align: center;
+  animation: slide_show .5s ease-out;
+}
+
+.slider_mover_button{
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-color: rgba(255,255,255,0.5);
+  border: 0.1px solid rgba(255,255,255,0.5);
+  border-radius: 2px;
+  cursor: pointer;
+}
+.slider_mover_button i{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.left{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.right{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.featured_book_get{
+  background-color: rgb(0, 176, 240);
+  border: 2px solid white;
+  border-radius: 40px;
+  height: 50px;
+  width: 150px;
+  color: white;
+  transition: all .5s ease-out;
+  cursor: pointer;
+  position: absolute;
+  right: 200px;
+  top: 55%;
+  transform: translateY(-55%);
+}
+.featured_book_get:hover{
+  background-color: white;
+  color: rgb(0, 176, 240);
+  border: 2px solid rgb(0, 176, 240);
+}
+.featured_books_desc p{
+  padding-bottom: 20px;
+  font-size: 35px;
+  position: absolute;
+  right: 200px;
+  top: 45%;
+  transform: translateY(-45%);
+}
+.featured_books_desc{
+  position: relative;
+  height: 600px;
+  width: 45%;
+  float: right;
+}
+#peon_description_section{
+  height: 300px;
+  background-color: rgb(254, 194, 0);
+  color: white;
+  font-size: 25px;
+  position: relative;
+}
+.peon_description_section_text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.peon_description_section_text p{
+margin-left: -30px;
+}
+
+footer{
+  height: 300px;
+}
+.footer_section{
+  height: 100%;
+  width: 33.33%;
+  position: relative;
+  float: left;
+}
+.footer_peon_logo img{
+  position: absolute;
+  height: 100px;
+  width: calc(100px * 2.04);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer_book_section ul{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  text-decoration: none;
+}
+.footer_book_section a{
+  text-decoration: none;
+}
+.footer_book_section h4{
+  margin-left: -30px;
+}
+.footer_social_media p{
+  letter-spacing: 10px;
+  font-size: 40px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .5s ease-out;
+}
+.footer_social_media p:nth-child(1) i:hover{
+  color: blue;
+}
+.footer_social_media p:nth-child(2) i:hover{
+  color: pink;
+}
+
+@keyframes slide_show{
+  from{opacity: 0.4}
+  to{opacity: 1}
 }

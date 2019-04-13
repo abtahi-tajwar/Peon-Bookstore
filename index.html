@@ -5,6 +5,10 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
     <title>Peon Bookstore - Home Page</title>
   </head>
   <body>
@@ -13,7 +17,7 @@
         <h1>Peon</h1>
         <center><div class="peon_desc">
           <p>Our goal is to make an easy book buying process so that everyone could easily buy books and make all the rare books avaible to people</p>
-          <button type="button" name="button">More..</button></div></center>
+          <a href="#peon_description_section">More..</a></div></center>
 
         <div class="contact_logo"><i class="fa fa-phone"></i></div>
         <div class="contact_phone_no">
@@ -27,5 +31,71 @@
         <div class="peon_book_library_menu_text_holder"><p><i class="fa fa-th-list"></i> View All Books</p></div>
       </div></a>
     </div>
+    <div class="book_slider_container">
+      <center>
+      <div class="featered_book_slider">
+        <div class="slider_book_image">
+          <img src="resources/1.jpeg" alt="Peon Featured Books">
+        </div>
+        <div class="slider_book_image">
+          <img src="resources/2.jpeg" alt="Peon Featured Books">
+        </div>
+        <div class="slider_book_image">
+          <img src="resources/3.jpeg" alt="Peon Featured Books">
+        </div>
+        <div class="slider_book_image">
+          <img src="resources/4.jpeg" alt="Peon Featured Books">
+        </div>
+        <div class="slider_book_image">
+          <img src="resources/5.jpeg" alt="Peon Featured Books">
+        </div>
+
+        <button type="button" class="slider_mover_button left"><i class="fa fa-chevron-left"></i></button>
+        <button type="button" class="slider_mover_button right"><i class="fa fa-chevron-right"></i></button>
+      </div>
+    </center>
+    <div class="featured_books_desc">
+      <p id="scroll">Some of our featured books</p>
+      <button type="button" class="featured_book_get">Get it now</button>
+    </div>
+  </div>
+
+  <div id="peon_description_section">
+    <div class="peon_description_section_text">
+      <p>Our goal is to make easiest book buying system so that everyone could easily find the best books and buy them seemlessly.</p>
+      <p>The peon bookstore has</p>
+      <ul>
+        <li>Featered book recommandation system so that people could choose the best selling book.</li>
+        <li>A huge collection of those books which are hard to find</li>
+        <li>Books of new writers, so that people could easily discover new talent</li>
+        <li>Home delivery system.(For now only available on chittagong and dhaka)</li>
+        <li>Easy bKash payment system. Or straight cash payment.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer_peon_logo footer_section">
+      <img src="resources/PeonLogo.PNG" alt="Peon Logo">
+    </div>
+    <div class="footer_book_section footer_section">
+      <ul>
+        <h4>Available book sections</h4>
+        <a href="#"><li>Nobles</li></a>
+        <a href="#"><li>Journals</li></a>
+        <a href="#"><li>History</li></a>
+        <a href="#"><li>Comedy</li></a>
+        <a href="#"><li>Sci-Fi</li></a>
+        <a href="#"><li>Horror</li></a>
+      </ul>
+    </div>
+    <div class="footer_social_media footer_section">
+      <p><a href="https://www.facebook.com/peononline/" target="
+        _blank"><i class="fa fa-facebook-square"></a></i>
+        <a href="https://www.instagram.com/peononline/" target="_blank"><i class="fa fa-instagram"></a></i>
+      </p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="script/main.js"></script>
   </body>
 </html>
